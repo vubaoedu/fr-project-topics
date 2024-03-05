@@ -1,0 +1,127 @@
+:root {
+  --footer-height: 100px;
+  --kmin-color-1: #173451;
+  --kmin-color-2: #fcbf16;
+  --kmin-color-3: #992154;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  font-size: 14px;
+  color: #4d4d4d;
+}
+a {
+  text-decoration: none;
+  color: var(--kmin-color-1);
+  text-transform: uppercase;
+}
+ol,
+ul {
+  margin-left: 40px;
+  margin-top: 15px;
+  line-height: 1.8rem;
+}
+
+label {
+  font-size: 16px;
+}
+
+.container {
+  width: 80%;
+  padding: 15px;
+}
+.form-sign_in {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.input__default {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 8px;
+}
+
+.btn {
+  border: none;
+  color: #ffff;
+  cursor: pointer;
+  font-weight: 600;
+  padding: 10px 15px;
+  border-radius: 8px;
+  background-color: var(--kmin-color-1);
+}
+
+.header {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.header__title {
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 57.6px;
+  text-align: center;
+  color: #fff;
+}
+
+.todo-container__btn {
+  gap: 12px;
+  display: flex;
+  justify-content: center;
+}
+
+.app-container {
+  display: flex;
+  align-items: center;
+  color: #ededed;
+  flex-direction: column;
+  background-image: linear-gradient(
+    to right,
+    var(--kmin-color-2),
+    var(--kmin-color-3) 45%
+  );
+  min-height: calc(100vh - var(--footer-height));
+}
+
+.requirement {
+  line-height: 1.8rem;
+}
+
+.footer {
+  height: var(--footer-height);
+  background-color: var(--kmin-color-1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.list_project {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.list_project > li {
+  list-style-type: none;
+  padding: 10px;
+  border-radius: 12px;
+  border: 1px solid #fff;
+  display: flex;
+  gap: 12px;
+}
+.list_project img {
+  width: 600px;
+  height: 300px;
+}
+.list_project h3 {
+  text-align: center;
+}
+.list_project p {
+  color: #ededed;
+}
